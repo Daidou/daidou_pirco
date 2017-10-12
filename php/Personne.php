@@ -23,7 +23,7 @@ private  $_ecivil;
     $this->_ecivil = $etatcivil;
   }
 
-  public function getPersonne(){
+  public function getPersonne(){ //on affiche un tableau qui contient les attribut indiquer 
 
           return array('nom'           => $this->_nom,
                        'prenom'        => $this->_prenom,
