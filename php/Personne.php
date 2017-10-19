@@ -19,11 +19,11 @@ private  $_ecivil;
     $this->_nom = $nom;
     $this->_prenom = $prenom;
     $this->_dnaissance = $datenaissance;
-    $this->_sexe = $sexe
+    $this->_sexe = $sexe;
     $this->_ecivil = $etatcivil;
   }
 
-  public function getPersonne(){ //on affiche un tableau qui contient les attribut indiquer 
+  public function getPersonne(){ //on affiche un tableau qui contient les attribut indiquer
 
           return array('nom'           => $this->_nom,
                        'prenom'        => $this->_prenom,
@@ -43,4 +43,5 @@ private  $_ecivil;
   public function setEtatcivil($etatcivil){
     $this->_ecivil = $etatcivil;
   }
+
 }
