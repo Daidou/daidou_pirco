@@ -1,9 +1,9 @@
 <?php
 
 /**
- * 
+ *
  */
-class ClassName extends AnotherClass
+class Mariage extends AnotherClass
 {
 
   function __construct(argument)
