@@ -8,9 +8,13 @@
   <body>
     <ul id="nav">
         <li><a href="#">Marriage</a></li>
+        <br/>
         <li><a href="#">Divorce</a></li>
+        <br/>
         <li><a href="#">Etat de Personne</a></li>
+        <br/>
         <li><a href="#">affichage des Personne</a></li>
+        <br/>
         <li><a href="#">Saisie des Personnes</a></li>
     </ul>
   </body>
