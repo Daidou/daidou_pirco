@@ -3,11 +3,18 @@
 /**
  *
  */
-class Mariage extends AnotherClass
+require_once "Personne.php";
+
+class Mariage extends Personne
 {
 
-  function __construct(argument)
+  public function ()
   {
-    # code...
+    if ($id , $etatcivil) {
+      $this->_id = $id;
+      $this->_ecivil = $etatcivil;
+    }
+
+
   }
 }
