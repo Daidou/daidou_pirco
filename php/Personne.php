@@ -42,5 +42,6 @@ private  $_ecivil;
   public function setEtatcivil($etatcivil){
     $this->_ecivil = $etatcivil;
   }
+  
 
 }
