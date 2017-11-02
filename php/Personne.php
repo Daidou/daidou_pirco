@@ -42,6 +42,16 @@ private  $_ecivil;
   public function setEtatcivil($etatcivil){
     $this->_ecivil = $etatcivil;
   }
-  
+  public function Mariage(){
+
+    if ($this->_ecivil=="null") {
+
+    }else {
+
+    }
+
+  }
+
+
 
 }
