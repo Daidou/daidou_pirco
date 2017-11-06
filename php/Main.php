@@ -2,16 +2,12 @@
 
 require_once "Citizen.php";
 
-
-$Personne1 = new Personne(1,"dylan","haubourdin","30/08/1996","M","Celibataire");
-$Personne2 = new Personne(2,"ludo","Gillodes","27/08/1996","M","Celibataire");
-
-
-var_dump(getId());
+$Citizen1 = new Citizen("haubourdin","dylan","30/08/1996","M");
+$Citizen2 = new Citizen("Dinh","Synthia","4/02/1997","F");
 
 
-var_dump($Personne2->setnom());
+var_dump($Citizen1->getCitizen());
 
-var_dump($Personne2->getPersonne());
+$Citizen1->setMarried($Citizen2);
 
-var_dump($Personne1->getPersonne());
+var_dump($Citizen1->getCitizen());
