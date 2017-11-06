@@ -4,7 +4,7 @@
 /** dylan et ludo
  *
  */
-class Personne
+class Citizen
 {
 private  $_id;
 private  $_nom;
@@ -12,6 +12,7 @@ private  $_prenom;
 private  $_dnaissance;
 private  $_sexe;
 private  $_ecivil;
+
 
   public function __construct($nom,$prenom,$datenaissance,$sexe,$etatcivil)
   {
@@ -44,5 +45,7 @@ private  $_ecivil;
   }
   public function mariage()
 
-
+  if () {
+    # code...
+  }
 }

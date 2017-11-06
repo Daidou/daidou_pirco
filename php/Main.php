@@ -1,6 +1,6 @@
 <?php
 
-require_once "Personne.php";
+require_once "Citizen.php";
 
 
 $Personne1 = new Personne(1,"dylan","haubourdin","30/08/1996","M","Celibataire");
