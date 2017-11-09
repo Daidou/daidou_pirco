@@ -83,7 +83,3 @@ private  $_conjoint;
       $this->_ecivil = WIDOWED;
     }
   }
-  public function getAllMarried(){
-
-  }
-}
