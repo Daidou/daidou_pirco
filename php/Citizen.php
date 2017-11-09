@@ -30,14 +30,26 @@ private  $_conjoint;
                        'datenaissance' => $this->_dnaissance,
                        'sexe'          => $this->_sexe,
                        'ecivil'        => $this->_ecivil,
-                       'conjoint'      => ($this->_conjoint == null) ? null : $this->_conjoint->getCitizen() 
+                       'conjoint'      => ($this->_conjoint == null) ? null : $this->_conjoint->getCitizen()
                      );
 
 
   }
 
-  public function getMarried(){
-    if($this->_ecivil == $state[1]){
+  public function getMarried(){ //on verifie si il est MARRIED
+    if($this->_ecivil == MARRIED){
+      return true;
+    }
+    return false;
+  }
+  public function getDivorced(){ //on verifie si il est DIVORCED
+    if ($this->_ecivil == DIVORCED) {
+      return true;
+    }
+    return false;
+  }
+  public function getWidowed(){ //on verifie si elle est WIDOWED
+    if ($this->_ecivil == WIDOWED) {
       return true;
     }
     return false;
@@ -70,5 +82,8 @@ private  $_conjoint;
     if($this->getMarried() /* == true ?*/){
       $this->_ecivil = WIDOWED;
     }
+  }
+  public function getAllMarried(){
+
   }
 }
