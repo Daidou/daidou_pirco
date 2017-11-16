@@ -1,17 +1,20 @@
 <?php
 
-require_once "Personne.php";
+require_once "Citizen.php";
+
+$Citizen1 = new Citizen("1","Haubourdin","dylan","30/08/1996","H");
+$Citizen2 = new Citizen("2","Dinh","Synthia","4/02/1997","F");
 
 
-$Personne1 = new Personne(1,"dylan","haubourdin","30/08/1996","M","Celibataire");
-$Personne2 = new Personne(2,"ludo","Gillodes","27/08/1996","M","Celibataire");
+var_dump($Citizen1->getCitizen());
 
+$Citizen1->setMarried($Citizen2);
 
-var_dump(getId());
+var_dump($Citizen1->getCitizen());
+var_dump($Citizen2->getCitizen());
 
+$tab = array($Citizen1,$Citizen2);
 
-var_dump($Personne2->setnom());
-
-var_dump($Personne2->getPersonne());
-
-var_dump($Personne1->getPersonne());
+for ($i=0; $i < 2 ; $i++) {
+  echo ($tab[$i]->getMarried()."<br>");
+}
